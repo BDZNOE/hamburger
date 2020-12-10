@@ -1,0 +1,26 @@
+.l-sidebar {
+    width: 19%;
+    background-color: $menu;
+    padding-left: 30px;
+    box-sizing: border-box;
+    position: relative;
+
+    @include tab {
+        position: absolute;
+        display: none;
+        z-index: 5;
+        left: 55%;
+        width: 45vw;
+
+        &.menu-open {
+            display: block;
+        }
+    };
+    @include sp {
+        left: 10%;
+        width: 90vw;
+    };
+
+
+
+}
